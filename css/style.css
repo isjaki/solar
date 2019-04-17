@@ -1,5 +1,10 @@
+body {
+    font-size: 14px;
+}
+
 header {
     padding: 20px;
+    background: linear-gradient(to right, #58975f, #0090d2);
 }
 
 header span {
@@ -48,18 +53,13 @@ header .icon {
     margin: 0 25px;
 }
 
-hr {
-    margin: 0;
-    height: 1px;
-    background-color: #dddbdb;
+nav {
+    padding: 15px 0;
+    background-color: #f5f6f7;
 }
 
 nav ul {
     margin-bottom: 0;
-}
-
-nav {
-    padding: 15px 0;
 }
 
 nav .nav-button {
@@ -68,26 +68,31 @@ nav .nav-button {
 }
 
 nav .social-icons {
-    margin-left: 60px;
+    margin-left: 60px; 
 }
 
 nav .social-icons .fab {
     margin: 0 5px;
     font-size: 30px;
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 nav .social-icons .fa-youtube {
     color: red;
 }
 
-main {
+.cover {
     padding: 30px 0;
     position: relative;
 }
 
-main article {
+.cover article {
     line-height: 3;
+}
+
+.cover img {
+    width: 400px;
+    max-width: 100%;
 }
 
 .offer-header {
@@ -96,19 +101,29 @@ main article {
     font-weight: bold;
 }
 
-.offer {
+.offer-body {
     width: 250px;
     margin: 0 auto;
-    padding: 0 40px;
-    border: 1px solid #000000;
+    padding: 10px 40px 0;
+    border-bottom: 3px solid #e0e0e0;
+    background-color: #fff;
+    box-shadow: 0 4px 24px 5px rgba(33, 33, 33, 0.06);
+    border-radius: 8px;
 }
 
-.offer span {
+.offer-body img {
+    display: block;
+    width: 150px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.offer-body span {
     display: block;
     margin: 15px 0;
 }
 
-.offer button {
+.offer-body button {
     width: 100px;
     display: block;
     margin: 40px auto 20px;
@@ -120,16 +135,16 @@ button.close {
     right: 20px;
 }
 
-footer {
+.information {
     padding: 40px 0;
 }
 
-footer article {
+.information article {
     line-height: 2;
     font-size: 0.95em;
 }
 
-.footer-advantage {
+.information-advantage {
     display: inline-block;
     position: relative;
     width: 45%;
@@ -138,11 +153,11 @@ footer article {
     border: 2px solid #000000;
 }
 
-.footer-advantage p {
+.information-advantage p {
     font-size: 0.95em;
 }
 
-.footer-logo {
+.information-logo {
     position: absolute;
     width: 48px;
     height: 40px;
@@ -159,7 +174,7 @@ footer article {
     color: #12c512;
 }
 
-.footer-advantage button {
+.information-advantage button {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -168,14 +183,18 @@ footer article {
     outline: none;
 }
 
-footer .dropdown-menu {
+.information .dropdown-menu {
     left: auto;
     right: 0;
 }
 
-footer .dropdown-menu.dropup {
+.information .dropdown-menu.dropup {
     top: auto;
     bottom: 32px;
+}
+
+.equipment {
+    background-color: #f5f6f7;
 }
 
 @media screen and (max-width: 1200px) {
@@ -184,7 +203,7 @@ footer .dropdown-menu.dropup {
         padding: 5px 0 0 0;
     }
 
-    .footer-advantage {
+    .information-advantage {
         width: 90%;
     }
 }
@@ -202,7 +221,7 @@ footer .dropdown-menu.dropup {
         margin-left: 0;
     }
 
-    .footer-advantage {
+    .information-advantage {
         width: 45%;
     }
 
@@ -225,7 +244,7 @@ footer .dropdown-menu.dropup {
         display: none;
     }
 
-    main article {
+    .cover article {
         line-height: 2;
     }
 
@@ -244,7 +263,7 @@ footer .dropdown-menu.dropup {
 }
 
 @media screen and (max-width: 576px) {
-    .footer-advantage {
+    .information-advantage {
         width: 90%;
         margin: 20px 20px;
     }
