@@ -197,6 +197,19 @@ button.close {
     background-color: #f5f6f7;
 }
 
+.stage {
+    margin: 10px 0 50px;
+}
+
+.stage img {
+    width: 100px;
+    height: 100px;
+}
+
+.stage .stage-info {
+    margin-left: 20px;
+}
+
 @media screen and (max-width: 1200px) {
     nav .social-icons {
         margin: 0;
