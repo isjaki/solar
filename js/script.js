@@ -58,7 +58,7 @@ $(document).ready(function() {
 
         var equipmentScrollBottom = $('#equipment').offset().top - $(window).scrollTop() - $(window).height();
 
-        if (equipmentScrollBottom < -50) {
+        if (equipmentScrollBottom < -$(window).height() / 4) {
             $('.offer').addClass('element-visible');
         }
     }

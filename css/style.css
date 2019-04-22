@@ -100,7 +100,7 @@ nav .nav-item {
     background-color: #f5f6f7;
     padding: 130px 0;
     position: relative;
-    height: calc(100vh - 63px - 165px);
+    min-height: calc(100vh - 63px - 165px);
 }
 
 #main .main-article {
@@ -115,15 +115,15 @@ nav .nav-item {
 }
 
 #main .main-form {
+    width: 400px;
+    box-shadow: 0 5px 24px #ccc;
     transform: translate3d(150%, 0, 0);
     opacity: 0.3;
     transition: all 1000ms;
 }
 
-#main img {
-    width: 400px;
-    max-width: 100%;
-    box-shadow: 0 5px 24px #ccc;
+#main img {  
+    width: 100%;
 }
 
 button.close {
@@ -133,7 +133,8 @@ button.close {
 }
 
 #information {
-    padding: 40px 0;
+    min-height: 50vh;
+    padding: 100px 0;
 }
 
 #information article {
@@ -191,9 +192,10 @@ button.close {
 }
 
 #equipment {
+    min-height: 50vh;
     background-color: #f5f6f7;
+    padding: 100px 0;
     padding-bottom: 10px;
-    padding: 50px 0;
 }
 
 .offer {
@@ -208,7 +210,7 @@ button.close {
 }
 
 .offer-body {
-    width: 250px;
+    width: 70%;
     margin: 0 auto;
     padding: 10px 40px 0;
     border-bottom: 3px solid #e0e0e0;
@@ -236,7 +238,8 @@ button.close {
 }
 
 #installation {
-    padding-top: 20px;
+    min-height: 50vh;
+    padding: 100px 0;
 }
 
 .stage {
@@ -253,6 +256,7 @@ button.close {
 }
 
 #advantages {
+    min-height: 50vh;
     background-color: #f5f6f7;
     padding: 50px 0;
 }
@@ -277,6 +281,7 @@ button.close {
 }
 
 #retail {
+    min-height: 50vh;
     padding: 50px 0 0;
 }
 
@@ -306,13 +311,16 @@ button.close {
 }
 
 #feedback {
+    min-height: 50vh;
     background-color: #f5f6f7;
     padding: 50px 0 50px;
 }
 
 .feedback-block {
+    background-color: #fff;
+    box-shadow: 0 5px 24px #ccc;
+    border-radius: 8px;
     position: relative;
-    border: 1px solid;
     margin: 20px 30px;
     z-index: 100;
 }
@@ -340,6 +348,10 @@ button.close {
 #gallery {
     box-sizing: border-box;
     padding: 50px 0;
+}
+
+#gallery img {
+    cursor: pointer;
 }
 
 #gallery .img-2 {
@@ -452,8 +464,7 @@ footer {
         font-size: 1.1em;
     }
 
-    #main img {
-        display: block;
+    #main .main-form {
         margin: 0 auto;
     }
 
