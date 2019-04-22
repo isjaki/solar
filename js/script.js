@@ -25,7 +25,7 @@ $(document).ready(function() {
     });
 
     // плавный скролл
-    $('nav .nav-link').click(function(event) {
+    $('a[href^="#"]').click(function(event) {
         event.preventDefault();
 
         var hash = this.hash;
@@ -64,5 +64,16 @@ $(document).ready(function() {
             $('.offer').addClass('element-visible');
         }
     }
+
+    // показать кнопку перехода в начало
+    $(window).scroll(function() {
+        var toTopButton = $('.totop');
+
+        if ($(this).scrollTop() > $(window).height()) {
+            toTopButton.addClass('visible');
+        } else {
+            toTopButton.removeClass('visible');
+        }
+    });
 
 });
