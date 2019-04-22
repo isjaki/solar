@@ -79,7 +79,7 @@ nav .nav-item .nav-link:hover {
 }
 
 nav .nav-item.social-icons {
-    margin-left: 160px;
+    margin-left: 250px;
 }
 
 nav .social-icons a {
@@ -144,6 +144,7 @@ button.close {
 #information article {
     line-height: 2;
     font-size: 0.95em;
+    text-align: justify;
 }
 
 .information-advantage {
@@ -198,8 +199,12 @@ button.close {
 #equipment {
     min-height: 50vh;
     background-color: #f5f6f7;
-    padding: 100px 0;
+    padding: 50px 0;
     padding-bottom: 10px;
+}
+
+#equipment h3 {
+    margin-bottom: 30px;
 }
 
 .offer {
@@ -214,18 +219,19 @@ button.close {
 }
 
 .offer-body {
-    width: 70%;
+    width: 270px;
     margin: 0 auto;
     padding: 10px 40px 0;
     border-bottom: 3px solid #e0e0e0;
     background-color: #fff;
     box-shadow: 0 4px 24px 5px rgba(33, 33, 33, 0.06);
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .offer-body img {
     display: block;
-    width: 150px;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
 }
@@ -241,9 +247,23 @@ button.close {
     margin: 40px auto 20px;
 }
 
+.equipment-submit {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 1.2em;
+}
+
+.equipment-submit button {
+    margin: 0 20px;
+}
+
 #installation {
     min-height: 50vh;
-    padding: 100px 0;
+    padding: 50px 0 0;
+}
+
+#installation h3 {
+    margin-bottom: 30px;
 }
 
 .stage {
@@ -261,7 +281,6 @@ button.close {
 
 #advantages {
     min-height: 50vh;
-    background-color: #f5f6f7;
     padding: 50px 0;
 }
 
@@ -285,8 +304,13 @@ button.close {
 }
 
 #retail {
+    background-color: #f5f6f7;
     min-height: 50vh;
     padding: 50px 0 0;
+}
+
+#retail h3 {
+    margin-bottom: 40px;
 }
 
 #retail .row {
@@ -354,6 +378,10 @@ button.close {
     padding: 50px 0;
 }
 
+#gallery h3 {
+    margin-bottom: 30px;
+}
+
 #gallery img {
     cursor: pointer;
 }
@@ -391,6 +419,10 @@ button.close {
 #articles {
     background-color: #f5f6f7;
     padding: 50px 0;
+}
+
+#articles h3 {
+    margin-bottom: 30px;
 }
 
 #articles article {

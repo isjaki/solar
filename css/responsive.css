@@ -7,6 +7,10 @@
         right: 10px;
     }
 
+    nav .nav-item.social-icons {
+        margin-left: 160px;
+    }
+
     .feedback-photo {
         right: 9px;
         bottom: -35px;
@@ -14,6 +18,11 @@
 
     .feedback-photo img {
         width: 70px;
+    }
+
+    #retail .retail-block > div {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -53,7 +62,36 @@
     }
 
     #main .main-form {
-        margin: 0 auto;
+        margin: 20px auto 0;
+    }
+
+    #information {
+        padding: 20px 0;
+    }
+
+    #equipment {
+        padding: 20px 0;
+    }
+
+    .offer-body {
+        margin-bottom: 20px;
+    }
+
+    .equipment-submit {
+        margin: 0 0 20px;
+    }
+
+    .equipment-submit button {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    #installation {
+        padding: 20px 0;
+    }
+
+    #retail {
+        padding: 20px 0 0;
     }
 
     .feedback-block {
@@ -69,8 +107,28 @@
         width: 100px;
     }
 
+    #advantages {
+        padding: 20px 0;
+    }
+
     .advantages-block {
         margin: 10px 0;
+    }
+
+    #feedback {
+        padding: 20px 0 20px;
+    }
+
+    #gallery .img-6 {
+        width: 49%;
+    }
+
+    #gallery .img-7 {
+        width: 50%;
+    }
+
+    #articles article {
+        margin-bottom: 20px;
     }
 }
 

@@ -16,10 +16,12 @@ $(document).ready(function() {
             768: {
                 items: 2
             },
-            1010: {
+            1199: {
                 items: 3
             }
-        }
+        },
+        loop: true,
+        margin: 20
     });
 
     // плавный скролл
