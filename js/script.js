@@ -76,4 +76,8 @@ $(document).ready(function() {
         }
     });
 
+    // анимация на navbar-toggler 
+    $('button.navbar-toggler').click(function() {
+        $(this).toggleClass('opened');
+    });
 });
