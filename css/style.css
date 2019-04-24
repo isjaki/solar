@@ -1,6 +1,6 @@
 body {
     font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: relative;
     overflow-x: hidden;
 }
@@ -10,6 +10,7 @@ h4 {
 }
 
 #intro {
+    font-family: 'Ubuntu', sans-serif;
     color: #fff;
     position: relative;
     min-height: 100vh;
@@ -53,19 +54,36 @@ h4 {
     width: 90%;
 }
 
-
 .nav-panel-item {
+    position: relative;
     display: inline-block;
     color: #fff;
+    font-weight: 300;
     font-size: 1.5rem;
-    width: 200px;
     text-align: center;
+    margin: 0 50px;
     transition: all 0.3s;
 }
 
 .nav-panel-item:hover {
     color: #d41d05;
     text-decoration: none;
+}
+
+.nav-panel-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.nav-panel-item:hover::after {
+    width: 100%;
+    background-color: #d41d05;
 }
 
 .intro-information {
