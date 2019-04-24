@@ -1,4 +1,20 @@
+@media screen and (max-width: 1450px) {
+    .nav-panel-wrapper {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .nav-panel-item {
+        font-size: 1.3rem;
+    }
+}
+
 @media screen and (max-width: 1199px) {
+    .nav-panel-item {
+        margin: 0 20px;
+    }
+
     .information-advantage {
         width: 90%;
     }
@@ -19,38 +35,17 @@
 }
 
 @media screen and (max-width: 992px) {
-    .header-block {
-        padding-left: 40px;
+    .intro-navigation {
+        top: 0;
+        padding-top: 20px;
+    }
+    
+    .nav-panel {
+        display: none;
     }
 
-    header .header-logo {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .header-info {
-        width: 410px;
-        margin: 10px auto;
-    }
-
-    .fa-phone, .fa-clock {
-        font-size: 30px;
-    }
-
-    .text-large {
-        font-size: 1.3em;
-    }
-
-    .text-medium {
-        font-size: 1.1em;
-    }
-
-    #main {
-        padding: 50px 0;
-    }
-
-    #main .main-form {
-        margin: 20px auto 0;
+    .nav-panel-btn {
+        display: inline-block;
     }
 
     #information {
@@ -137,14 +132,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    #main article {
-        line-height: 2;
-    }
-
-    nav .nav-button {
-        margin: 5px;
-    }
-
     .list-inline {
         text-align: center;
     }
@@ -157,19 +144,7 @@
     }
 }
 
-@media screen and (max-width: 440px) {
-    .header-block {
-        display: block;
-        margin: 0 auto;
-        width: 70%;
-    }
-}
-
 @media screen and (max-width: 370px) {
-    nav .nav-button {
-        margin: 5px;
-    }
-
     .feedback-photo {
         right: 9px;
         bottom: -35px;
