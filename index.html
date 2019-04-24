@@ -7,6 +7,9 @@
         <!-- Font awesome icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Ubuntu:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+
         <!-- Bootstrap -->
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         
@@ -22,77 +25,37 @@
     </head>
     <body>
 
-        <header id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 text-left-lg ">
-                        <img src="./img/placeholder-logo.png" alt="Company's logo" class="header-logo">
-                    </div>
-                    <div class="header-info col-lg-6">
-                        <div class="header-block block-divider">
-                            <span class="icon"><i class="fas fa-phone"></i></span>
-                            <span class="text-medium">Позвоните нам</span>
-                            <span class="text-medium"><strong>(831) 413-49-82</strong></span>
-                        </div>
-                        <div class="header-block">
-                            <span class="icon"><i class="far fa-clock"></i></span>
-                            <span class="text-medium">Время работы:</span>
-                            <span><b>ПН-ЧТ</b>: 09:00-18:00</span>
-                            <span><b>ПТ</b>: 09:00-17:00</span>
-                        </div>  
-                    </div>
-                    
+        
+        <section id="intro">
+
+            <video id="background-video" autoplay muted loop>
+                <source src="./assets/video/solar.mp4" type="video/mp4" />
+            </video>
+
+            <div class="intro-navigation">
+                <div class="intro-logo">
+                    <img src="./assets/img/logo.png" alt="cek logo" />
                 </div>
-            </div>
-        </header>
-
-        <nav class="navbar navbar-expand-lg sticky-top bg-light navbar-light">
-            <div class="container">
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
-                <span class="toggler-bar toggler-bar-first"></span>
-                <span class="toggler-bar toggler-bar-second"></span>
-                <span class="toggler-bar toggler-bar-third"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navigation">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="#equipment" class="nav-link">Оборудование</a></li>
-                    <li class="nav-item"><a href="#retail" class="nav-link">Розница</a></li>
-                    <li class="nav-item"><a href="#feedback" class="nav-link">Отзывы</a></li>
-                    <li class="nav-item"><a href="#gallery" class="nav-link">Наши работы</a></li>
-                    <li class="nav-item social-icons">
-                        <a href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-            </div>
-        </nav>
-
-        <section id="main">
-            <div class="container">
-                <div class="row">
-                    <section class="main-article col-lg-7">
-                        <h1>ВНЯТНЫЙ, ПОНЯТНЫЙ, ЗАГОЛОВОК</h1>
-                        <h2>Развернутое пояснение к заголовку</h2>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada,
-                            neque vitae scelerisque imperdiet, lacus risus blandit erat, nec semper nulla
-                            justo ac risus. Etiam gravida sapien efficitur odio porta auctor. Nullam 
-                            aliquet velit augue, dignissim iaculis libero imperdiet hendrerit. Vivamus
-                            pretium elementum nisi, in viverra risus blandit at. Donec non maximus nunc.
-                            Donec nulla turpis, posuere eget laoreet at, elementum a tortor. Praesent porttitor
-                            leo dictum sem lacinia luctus. Praesent dapibus sodales velit, sed viverra magna
-                            varius at. Curabitur arcu nisl, suscipit eu pulvinar sed, mattis sed libero. Morbi
-                            sit amet arcu laoreet, aliquam ex vitae, placerat diam.</article>
-                    </section>
-                    <section class="main-form col-lg-5">
-                        <img src="./img/form-image.png" alt="form" />
-                    </section>    
+                <div class="nav-panel-wrapper">
+                    <div class="nav-panel">
+                        <a class="nav-panel-item" href="#equipment">Оборудование</a>
+                        <a class="nav-panel-item" href="#retail">Розница</a>
+                        <a class="nav-panel-item" href="#gallery">Наши работы</a>
+                        <a class="nav-panel-item" href="#feedback">Отзывы</a> 
+                    </div>       
                 </div>
+            </div> 
+
+            <div class="intro-information">
+                <section class="intro-title">
+                    <h1>Солнечные электростанции: проектирование и установка «под ключ»</h1>
+                    <h2>Станьте независимыми от сбытовых компаний, перебоев на электростанциях и платы за «топливо»</h2>
+                </section>
+                <section class="intro-form">
+                    <img src="./assets/img/form-image.png" alt="form" />
+                </section>    
             </div>
+
         </section>
 
         <section id="information">
@@ -100,16 +63,12 @@
                 <div class="row">
                     <section class="col-md-5">
                         <h3>Информация о солнечной энергии</h3>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada,
-                            neque vitae scelerisque imperdiet, lacus risus blandit erat, nec semper nulla
-                            justo ac risus. Etiam gravida sapien efficitur odio porta auctor. Nullam 
-                            aliquet velit augue, dignissim iaculis libero imperdiet hendrerit. Vivamus
-                            pretium elementum nisi, in viverra risus blandit at. Donec non maximus nunc.
-                            Donec nulla turpis, posuere eget laoreet at, elementum a tortor. Praesent porttitor
-                            leo dictum sem lacinia luctus. Praesent dapibus sodales velit, sed viverra magna
-                            varius at. Curabitur arcu nisl, suscipit eu pulvinar sed, mattis sed libero. Morbi
-                            sit amet arcu laoreet, aliquam ex vitae, placerat diam. Etiam gravida sapien efficitur
-                            odio porta auctor. Nullam aliquet velit augue, dignissim iaculis libero.</article>
+                        <article>Солнечные электростанции – автономный стабильный источник электричества, работающий от солнечной энергии (бесплатной, неограниченной и общедоступной), с длительным сроком службы и минимальным риском поломки.
+                                При этом, Пользователь самостоятельно контролирует количество вырабатываемой энергии. А выработка ведется даже в пасмурную погоду.
+                                - Отсутствие платы за «топливо» и контроля за его использованием от сбытовых компаний
+                                - Независимость от перебоев в работе электростанций и скачков напряжения в сети
+                                - Бесшумность, безопасность для здоровья и окружающей среды
+                                - Возможность использования в качестве надежного ИБП</article>
                     </section>
                     <section class="col-md-7">
                         <div class="information-advantage">
@@ -144,7 +103,7 @@
                     <div class="col offer">
                         <h5 class="offer-header">Набор оборудования 1</h5>
                         <div class="offer-body">
-                            <img src="./img/solar-panel.png" alt="solar panel" />
+                            <img src="./assets/img/solar-panel.png" alt="solar panel" />
                             <span>Инвертер: 220В | 2.4кВт</span>
                             <span>Солнечные панели: x3</span>
                             <span>АКБ: 100Ач х2</span>
@@ -159,7 +118,7 @@
                     <div class="col offer">
                         <h5 class="offer-header">Набор оборудования 2</h5>
                         <div class="offer-body">
-                            <img src="./img/solar-panel.png" alt="solar panel" />
+                            <img src="./assets/img/solar-panel.png" alt="solar panel" />
                             <span>Инвертер: 220В | 2.4кВт</span>
                             <span>Солнечные панели: x3</span>
                             <span>АКБ: 100Ач х2</span>
@@ -174,7 +133,7 @@
                     <div class="col offer">
                         <h5 class="offer-header">Набор оборудования 3</h5>
                         <div class="offer-body">
-                            <img src="./img/solar-panel.png" alt="solar panel" />
+                            <img src="./assets/img/solar-panel.png" alt="solar panel" />
                             <span>Инвертер: 220В | 2.4кВт</span>
                             <span>Солнечные панели: x3</span>
                             <span>АКБ: 100Ач х2</span>
@@ -204,7 +163,7 @@
                                             <input type="tel" name="phone" id="phone" class="form-control">
                                         </div>
                                         <div class="checkbox">
-                                            <label><input type="checkbox" name="name" id="name" value="agreed">
+                                            <label><input type="checkbox" name="name" id="agreed" value="agreed">
                                                 Согласие на обработку данных
                                             </label>
                                         </div>
@@ -234,7 +193,7 @@
                     <div class="col-md">
 
                         <div class="stage d-flex">
-                            <img src="./img/solar-panel.png" /> 
+                            <img src="./assets/img/solar-panel.png" alt="img" /> 
                             <div class="stage-info">
                                 <h4>Этап 1</h4>
                                 <article>
@@ -246,7 +205,7 @@
                         </div>
 
                         <div class="stage d-flex">
-                            <img src="./img/solar-panel.png" /> 
+                            <img src="./assets/img/solar-panel.png" alt="img" /> 
                             <div class="stage-info">
                                 <h4>Этап 2</h4>
                                 <article>
@@ -261,7 +220,7 @@
                     <div class="col-md">
 
                         <div class="stage d-flex">
-                            <img src="./img/solar-panel.png" /> 
+                            <img src="./assets/img/solar-panel.png" alt="img" /> 
                             <div class="stage-info">
                                 <h4>Этап 3</h4>
                                 <article>
@@ -273,7 +232,7 @@
                         </div>
 
                         <div class="stage d-flex">
-                            <img src="./img/solar-panel.png" /> 
+                            <img src="./assets/img/solar-panel.png" alt="img" /> 
                             <div class="stage-info">
                                 <h4>Этап 4</h4>
                                 <article>
@@ -296,7 +255,7 @@
 
                     <div class="retail-block">
                         <div class="d-flex">
-                            <img src="./img/solar-panel.png" />
+                            <img src="./assets/img/solar-panel.png" alt="img" />
                             <div class="d-flex flex-column justify-content-between">
                                 <h4>Наименование</h4>
                                 <div class="retail-block-info">
@@ -314,7 +273,7 @@
 
                     <div class="retail-block">
                         <div class="d-flex">
-                            <img src="./img/solar-panel.png" />
+                            <img src="./assets/img/solar-panel.png" alt="img" />
                             <div class="d-flex flex-column justify-content-between">
                                 <h4>Наименование</h4>
                                 <div class="retail-block-info">
@@ -332,7 +291,7 @@
 
                     <div class="retail-block">
                         <div class="d-flex">
-                            <img src="./img/solar-panel.png" />
+                            <img src="./assets/img/solar-panel.png" alt="img" />
                             <div class="d-flex flex-column justify-content-between">
                                 <h4>Наименование</h4>
                                 <div class="retail-block-info">
@@ -350,7 +309,7 @@
 
                     <div class="retail-block">
                         <div class="d-flex">
-                            <img src="./img/solar-panel.png" />
+                            <img src="./assets/img/solar-panel.png" alt="img" />
                             <div class="d-flex flex-column justify-content-between">
                                 <h4>Наименование</h4>
                                 <div class="retail-block-info">
@@ -368,7 +327,7 @@
 
                     <div class="retail-block">
                         <div class="d-flex">
-                            <img src="./img/solar-panel.png" />
+                            <img src="./assets/img/solar-panel.png" alt="img" />
                             <div class="d-flex flex-column justify-content-between">
                                 <h4>Наименование</h4>
                                 <div class="retail-block-info">
@@ -394,7 +353,7 @@
                 <h3 class="text-center">Наши преимущества</h3>
                 <div class="row">
                     <div class="col-lg-5 text-center text-lg-right mb-2">
-                        <img src="./img/solar-panel.png" />
+                        <img src="./assets/img/solar-panel.png" alt="img" />
                     </div>
                     <div class="col-lg-6 d-flex flex-column justify-content-around">
 
@@ -460,7 +419,7 @@
                         </article>
                         <h4><strong>Иванов Иван</strong></h4>
                         <div class="feedback-photo">
-                            <img src="./img/solar-panel.png" />
+                            <img src="./assets/img/solar-panel.png" alt="img" />
                         </div>
                     </div>
                     <div class="col-lg feedback-block">
@@ -472,7 +431,7 @@
                         </article>
                         <h4><strong>Иванов Иван</strong></h4>
                         <div class="feedback-photo">
-                            <img src="./img/solar-panel.png" />
+                            <img src="./assets/img/solar-panel.png" alt="img" />
                         </div>
                     </div>
                     <div class="col-lg feedback-block">
@@ -482,9 +441,9 @@
                             varius at. Curabitur arcu nisl, suscipit eu pulvinar sed, mattis sed libero. Morbi
                             sit amet arcu laoreet
                         </article>
-                        <h4><strong>Иванов Иван</strong></h4>
+                        <h4><strong>Иванов Иван</strong></h4>/assets
                         <div class="feedback-photo">
-                            <img src="./img/solar-panel.png" />
+                            <img src="./assets/img/solar-panel.png" alt="img" />
                         </div>
                     </div>
                 </div>
@@ -496,24 +455,24 @@
                 <h3 class="text-center">Наши работы</h3>
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="img-1 img-thumbnail" src="./img/solar-panel.png" data-toggle="modal" data-target="#img-modal" />
+                        <img class="img-1 img-thumbnail" src="./assets/img/solar-panel.png" alt="img" data-toggle="modal" data-target="#img-modal" />
                     </div>
                     <div class="col-lg-5">
-                        <img class="img-2 img-thumbnail" src="./img/solar-panel.png" data-toggle="modal" data-target="#img-modal" />
-                        <img class="img-3 img-thumbnail" src="./img/solar-panel.png" data-toggle="modal" data-target="#img-modal" />
-                        <img class="img-4 img-thumbnail" src="./img/solar-panel.png" data-toggle="modal" data-target="#img-modal" />
-                        <img class="img-5 img-thumbnail" src="./img/form-image.png" data-toggle="modal" data-target="#img-modal" />
+                        <img class="img-2 img-thumbnail" src="./assets/img/solar-panel.png" alt="img" data-toggle="modal" data-target="#img-modal" />
+                        <img class="img-3 img-thumbnail" src="./assets/img/solar-panel.png" alt="img" data-toggle="modal" data-target="#img-modal" />
+                        <img class="img-4 img-thumbnail" src="./assets/img/solar-panel.png" alt="img" data-toggle="modal" data-target="#img-modal" />
+                        <img class="img-5 img-thumbnail" src="./assets/img/form-image.png" alt="img" data-toggle="modal" data-target="#img-modal" />
                     </div>
                     <div class="col-lg-3">
-                        <img class="img-6 img-thumbnail" src="./img/solar-panel.png" data-toggle="modal" data-target="#img-modal" />
-                        <img class="img-7 img-thumbnail" src="./img/solar-panel.png" data-toggle="modal" data-target="#img-modal" />
+                        <img class="img-6 img-thumbnail" src="./assets/img/solar-panel.png" alt="img" data-toggle="modal" data-target="#img-modal" />
+                        <img class="img-7 img-thumbnail" src="./assets/img/solar-panel.png" alt="img" data-toggle="modal" data-target="#img-modal" />
                     </div>
                 </div>
             </div>
             <div class="modal fade" id="img-modal">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-body">
-                        <img src="./img/solar-panel.png" />
+                        <img src="./assets/img/solar-panel.png" alt="img" />
                     </div>        
                 </div>
             </div>
@@ -524,7 +483,7 @@
                 <h3 class="text-center">Статьи</h3>
                 <div class="row justify-content-around">
                     <article class="col-lg">
-                        <img src="./img/solar-panel.png" />
+                        <img src="./assets/img/solar-panel.png" alt="img" />
                         <div>
                             <h4 class="text-center mt-2">Donec nulla turpis</h4>
                             <p>Etiam gravida sapien efficitur odio porta auctor. Nullam 
@@ -534,7 +493,7 @@
                         </div>
                     </article>
                     <article class="col-lg">
-                        <img src="./img/solar-panel.png" />
+                        <img src="./assets/img/solar-panel.png" alt="img" />
                         <div>
                             <h4 class="text-center mt-2">Donec nulla turpis</h4>
                             <p>Etiam gravida sapien efficitur odio porta auctor. Nullam 
@@ -544,7 +503,7 @@
                         </div>
                     </article>
                     <article class="col-lg">
-                        <img src="./img/solar-panel.png" />
+                        <img src="./assets/img/solar-panel.png" alt="img" />
                         <div>
                             <h4 class="text-center mt-2">Donec nulla turpis</h4>
                             <p>Etiam gravida sapien efficitur odio porta auctor. Nullam 
@@ -561,7 +520,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-3 mb-3">
-                        <img src="./img/placeholder-logo.png" alt="Company's logo" class="header-logo">
+                        <img src="./assets/img/logo.png" alt="cek logo">
                     </div>
                     <div class="col-lg-2">
                         <ul class="list-unstyled">
@@ -581,17 +540,23 @@
                         </ul>
                     </div>
                     <div class="col-xl-2 col-lg-3 phone">
-                        <span>(831) 228-09-11</span>
+                        <div class="phone-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div><a href="tel:+78312280911">(831) 228-09-11</a></div>
                     </div>
                     <div class="col-lg-2 email">
-                        <span>solar@cek.ru</span>
+                        <div class="email-icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div><a href="mailto:solar@cek.ru">solar@cek.ru</a></div>
                     </div>
                 </div>
             </div>
         </footer>
 
         <div class="totop">
-            <a href="#header"><i class="fa fa-arrow-up"></i></a>
+            <a href="#intro"><i class="fa fa-arrow-up"></i></a>
         </div>
 
         <!-- JQuery -->

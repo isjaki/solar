@@ -32,10 +32,10 @@ $(document).ready(function() {
         var target = $(hash);
         var targetId = target.attr('id');
 
-        var navbarHeight = $('nav').height();
+        //var navbarHeight = $('nav').height();
 
         $('html, body').animate({
-            scrollTop: target.offset().top - navbarHeight
+            scrollTop: target.offset().top // - navbarHeight
         }, 500, function() {
 
             target.removeAttr('id');
@@ -56,8 +56,6 @@ $(document).ready(function() {
     $(window).scroll(animateOfferElements);
 
     function animateOfferElements() {
-        $('.main-article, .main-form').addClass('element-visible');
-
         var equipmentScrollBottom = $('#equipment').offset().top - $(window).scrollTop() - $(window).height();
 
         if (equipmentScrollBottom < -$(window).height() / 4) {

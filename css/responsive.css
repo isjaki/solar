@@ -3,14 +3,6 @@
         width: 90%;
     }
 
-    .block-divider::after {
-        right: 10px;
-    }
-
-    nav .nav-item.social-icons {
-        margin-left: 160px;
-    }
-
     .feedback-photo {
         right: 9px;
         bottom: -35px;
@@ -51,10 +43,6 @@
 
     .text-medium {
         font-size: 1.1em;
-    }
-
-    nav .nav-item.social-icons {
-        margin-left: 10px;
     }
 
     #main {
@@ -123,6 +111,10 @@
         padding: 20px 0;
     }
 
+    #gallery .img-1 {
+        width: 99%;
+    }
+
     #gallery .img-6 {
         width: 49%;
     }
@@ -156,11 +148,6 @@
     .list-inline {
         text-align: center;
     }
-
-    nav .social-icons {
-        margin: 0;
-        padding: 5px;
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -171,10 +158,6 @@
 }
 
 @media screen and (max-width: 440px) {
-    .block-divider::after {
-        display: none;
-    }
-
     .header-block {
         display: block;
         margin: 0 auto;
