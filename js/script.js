@@ -84,7 +84,7 @@ $(document).ready(function() {
         if (windowScrollTop > windowHeight / 1.2) {
             $('.solar-info-article').addClass('in-view');
             $('.backdrop-overlay-solar').animate({
-                opacity: '0.5'
+                opacity: '0.6'
             }, 500);
         }
     });

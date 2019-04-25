@@ -194,12 +194,6 @@ button.close {
     height: 110vh;
 }
 
-#solar-info article {
-    line-height: 2;
-    font-size: 0.95em;
-    text-align: justify;
-}
-
 .solar-info-bg {
     position: absolute;
     top: 0;
@@ -244,6 +238,11 @@ button.close {
 
 .solar-info-article p {
     font-size: 1.5rem;
+}
+
+.solar-info-article article {
+    line-height: 2;
+    text-align: justify;
 }
 
 #equipment {

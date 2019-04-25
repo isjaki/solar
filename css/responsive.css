@@ -73,8 +73,8 @@
         margin: 10px auto;
     }
 
-    #information {
-        padding: 20px 0;
+    .solar-info-article p {
+        font-size: 1.3rem;
     }
 
     #equipment {
@@ -174,6 +174,18 @@
     .intro-information {
         top: 30%;
     }
+
+    .solar-info-article h3 {
+        font-size: 1.8rem;
+    }
+
+    .solar-info-article p {
+        font-size: 1.2rem;
+    }
+
+    .solar-info-article article {
+        line-height: 1.5;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -195,6 +207,11 @@
     
     .intro-form {
         width: 90%;
+    }
+
+    .solar-info-article.in-view {
+        top: 30%;
+        transform: translate(0, -30%);
     }
 
     .information-advantage {
