@@ -49,6 +49,10 @@ h4 {
     z-index: 900;
 }
 
+.intro-logo {
+   transform: translate(0, -15px);
+}
+
 .nav-panel-wrapper {
     margin-left: 200px;
     width: 90%;
@@ -157,7 +161,8 @@ h4 {
 
 .intro-information {
     position: absolute;
-    top: 50%;
+    top: 60%;
+    transform: translate(0, -60%);
     z-index: 100;
     display: flex;
     width: 100%;
@@ -274,11 +279,9 @@ button.close {
     width: 270px;
     margin: 0 auto;
     padding: 10px 40px 0;
-    border-bottom: 3px solid #e0e0e0;
     background-color: #fff;
     -webkit-box-shadow: 0 4px 24px 5px rgba(33, 33, 33, 0.06);
             box-shadow: 0 4px 24px 5px rgba(33, 33, 33, 0.06);
-    border-radius: 8px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }

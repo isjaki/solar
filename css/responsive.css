@@ -39,6 +39,10 @@
         top: 0;
         padding-top: 20px;
     }
+
+    .intro-logo {
+        transform: translate(0, 0);
+     }
     
     .nav-panel {
         display: none;
@@ -54,6 +58,7 @@
 
     .intro-information {
         top: 40%;
+        transform: translate(0, 0);
         flex-direction: column;
     }
 
