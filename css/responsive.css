@@ -73,6 +73,10 @@
         margin: 10px auto;
     }
 
+    .solar-info-article {
+        width: 100%;
+    }
+
     .solar-info-article p {
         font-size: 1.3rem;
     }
