@@ -48,6 +48,31 @@
         display: inline-block;
     }
 
+    .backdrop-menu {
+        display: block;
+    }
+
+    .intro-information {
+        top: 40%;
+        flex-direction: column;
+    }
+
+    .intro-title {
+        width: 100%;
+    }
+
+    .intro-title h1 {
+        font-size: 2rem;
+    }
+
+    .intro-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-form {
+        margin: 10px auto;
+    }
+
     #information {
         padding: 20px 0;
     }
@@ -137,7 +162,41 @@
     }
 }
 
+@media screen and (max-width: 670px) {
+    .intro-navigation {
+        margin: 0;
+    }
+
+    .nav-panel-btn {
+        right: 20px;
+    }
+
+    .intro-information {
+        top: 30%;
+    }
+}
+
 @media screen and (max-width: 576px) {
+    .intro-navigation {
+        padding: 20px 0;
+    }
+
+    .intro-logo {
+        transform: scale(0.8);
+    }
+
+    .intro-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-title h2 {
+        font-size: 1.3rem;
+    }
+    
+    .intro-form {
+        width: 90%;
+    }
+
     .information-advantage {
         width: 90%;
         margin: 20px 20px;

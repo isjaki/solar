@@ -32,6 +32,8 @@ $(document).ready(function() {
         var target = $(hash);
         var targetId = target.attr('id');
 
+        console.log('click');
+
         //var navbarHeight = $('nav').height();
 
         $('html, body').animate({
@@ -74,8 +76,9 @@ $(document).ready(function() {
         }
     });
 
-    // анимация на navbar-toggler 
-    $('button.navbar-toggler').click(function() {
+    // анимация на nav-psnel-btn и backdrop-menu
+    $('button.nav-panel-btn').click(function() {
         $(this).toggleClass('opened');
+        $('.backdrop-menu').toggleClass('opened');
     });
 });
