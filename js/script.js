@@ -32,8 +32,6 @@ $(document).ready(function() {
         var target = $(hash);
         var targetId = target.attr('id');
 
-        console.log('click');
-
         //var navbarHeight = $('nav').height();
 
         $('html, body').animate({
@@ -65,14 +63,29 @@ $(document).ready(function() {
         }
     }
 
-    // показать кнопку перехода в начало
+    // показать кнопку перехода в начало,
+    // анимировать solar-info
     $(window).scroll(function() {
         var toTopButton = $('.totop');
 
-        if ($(this).scrollTop() > $(window).height()) {
+        var windowScrollTop = $(this).scrollTop();
+        var windowHeight = $(this).height();
+
+        if (windowScrollTop > windowHeight) {
             toTopButton.addClass('visible');
         } else {
             toTopButton.removeClass('visible');
+        }
+
+        if (windowScrollTop > windowHeight / 2) {
+            $('.backdrop-overlay-solar').addClass('in-view');
+        }
+
+        if (windowScrollTop > windowHeight / 1.2) {
+            $('.solar-info-article').addClass('in-view');
+            $('.backdrop-overlay-solar').animate({
+                opacity: '0.5'
+            }, 500);
         }
     });
 

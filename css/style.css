@@ -189,46 +189,61 @@ button.close {
     right: 20px;
 }
 
-#information {
-    background-color: #f5f6f7;
-    min-height: 50vh;
-    padding: 100px 0;
+#solar-info {
+    position: relative;
+    height: 110vh;
 }
 
-#information article {
+#solar-info article {
     line-height: 2;
     font-size: 0.95em;
     text-align: justify;
 }
 
-.information-advantage {
-    display: inline-block;
-    position: relative;
-    width: 45%;
-    margin: 20px 10px;
-    padding: 10px 30px 10px 70px;
-    border: 2px solid #000000;
-}
-
-.information-advantage p {
-    font-size: 0.95em;
-}
-
-.information-logo {
+.solar-info-bg {
     position: absolute;
-    width: 48px;
-    height: 40px;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-    left: 10px;
-    text-align: center;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/img/solar-bg.png');
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -5;
 }
 
-.fa-calendar-check {
-    font-size: 40px;
-    color: #12c512;
+.backdrop-overlay-solar {
+    opacity: 0.3;
+    top: 150vh;
+    transition: top 0.5s;
+}
+
+.backdrop-overlay-solar.in-view {
+    top: 0;
+}
+
+.solar-info-article {
+    position: absolute;
+    top: 150vh;
+    transform: translate(0, -50%);
+    padding: 0 50px;
+    margin: 0 auto;
+    color: #fff;
+    transition: top 0.7s;
+}
+
+.solar-info-article.in-view {
+    top: 50%;
+}
+
+.solar-info-article h3 {
+    font-size: 2.5rem;
+}
+
+.solar-info-article p {
+    font-size: 1.5rem;
 }
 
 #equipment {
