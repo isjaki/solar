@@ -20,10 +20,6 @@ function style() {
         .pipe(browserSync.stream());
 }
 
-function reload() {
-    browserSync.reload();
-}
-
 function watch() {
     browserSync.init({
         server: {
@@ -32,7 +28,7 @@ function watch() {
     });
 
     gulp.watch(paths.styles.src, style);
-    gulp.watch(['src/*html', paths.styles.src, 'src/css/*.css'], reload);
+    gulp.watch(['src/*.html', 'src/js/script.js']).on('change', browserSync.reload);
 }
 
 exports.watch = watch;
@@ -41,4 +37,4 @@ exports.style = style;
 
 const build = gulp.parallel(style, watch);
 
-gulp.task('default', build);
+gulp.task('start', build);

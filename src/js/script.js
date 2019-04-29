@@ -88,7 +88,7 @@ $(document).ready(function() {
             }, 500);
         }
     });
-
+    
     // анимация на nav-psnel-btn и backdrop-menu
     $('button.nav-panel-btn').click(function() {
         $(this).toggleClass('opened');

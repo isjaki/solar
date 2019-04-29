@@ -145,7 +145,8 @@ h4 {
 #solar-info {
   position: relative;
   min-height: 50vh;
-  display: flex; }
+  display: flex;
+  background-color: #f5f6f7; }
   #solar-info .solar-info-article {
     padding: 50px 50px;
     width: 50%;
