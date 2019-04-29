@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 
 const paths = {
     styles: {
-        src: 'src/css/scss/*.scss',
+        src: 'src/css/scss/main.scss',
         dest: 'src/css'
     }
 }
@@ -27,7 +27,7 @@ function watch() {
         }
     });
 
-    gulp.watch(paths.styles.src, style);
+    gulp.watch('src/css/scss/*.scss', style);
     gulp.watch(['src/*.html', 'src/js/script.js']).on('change', browserSync.reload);
 }
 

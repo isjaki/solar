@@ -1,0 +1,43 @@
+footer {
+    padding: 50px 0;
+    background-color: #0090d2;
+    color: #fff;
+    font-size: 1.1rem;
+
+    @include large-screen {
+        padding: 20px 0;
+    }
+
+    @include medium-screen {
+        padding: 20px 20px !important;
+    }
+
+    ul.list-unstyled {
+
+       a {
+            color: #fff;
+        } 
+    }
+
+    .phone,
+    .email {
+        font-weight: bold;
+        font-size: 1.3rem;
+        position: relative;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    .phone-icon,
+    .email-icon {
+        position: absolute;
+        left: -10px;
+    }
+
+    .fa-phone,
+    .fa-clock {
+        font-size: 20px;
+    }
+}

@@ -15,10 +15,6 @@
         margin: 0 20px;
     }
 
-    .information-advantage {
-        width: 90%;
-    }
-
     .feedback-photo {
         right: 9px;
         bottom: -35px;
@@ -42,7 +38,7 @@
 
     .intro-logo {
         transform: translate(0, 0);
-     }
+    }
     
     .nav-panel {
         display: none;
@@ -149,12 +145,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .list-inline {
-        text-align: center;
-    }
-}
-
 @media screen and (max-width: 670px) {
     .intro-navigation {
         margin: 0;
@@ -200,16 +190,6 @@
     
     .intro-form {
         width: 90%;
-    }
-
-    .solar-info-article.in-view {
-        top: 30%;
-        transform: translate(0, -30%);
-    }
-
-    .information-advantage {
-        width: 90%;
-        margin: 20px 20px;
     }
 }
 

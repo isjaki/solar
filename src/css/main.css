@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: relative;
   overflow-x: hidden; }
 
@@ -40,13 +40,37 @@ h4 {
     padding: 0 20px;
     margin: 0 50px;
     z-index: 900; }
+    @media screen and (max-width: 992px) {
+      #intro .intro-navigation {
+        top: 0;
+        padding-top: 20px; } }
+    @media screen and (max-width: 670px) {
+      #intro .intro-navigation {
+        margin: 0; } }
+    @media screen and (max-width: 576px) {
+      #intro .intro-navigation {
+        padding: 20px 0; } }
     #intro .intro-navigation .intro-logo {
       -webkit-transform: translate(0, -15px);
               transform: translate(0, -15px); }
+      @media screen and (max-width: 992px) {
+        #intro .intro-navigation .intro-logo {
+          -webkit-transform: translate(0, 0);
+                  transform: translate(0, 0); } }
+      @media screen and (max-width: 576px) {
+        #intro .intro-navigation .intro-logo {
+          -webkit-transform: scale(0.8);
+                  transform: scale(0.8); } }
     #intro .intro-navigation .nav-panel-wrapper {
       margin-left: 200px;
       width: 90%;
       position: relative; }
+      @media screen and (max-width: 1450px) {
+        #intro .intro-navigation .nav-panel-wrapper {
+          margin-left: 60px; } }
+      @media screen and (max-width: 992px) {
+        #intro .intro-navigation .nav-panel-wrapper .nav-panel {
+          display: none; } }
       #intro .intro-navigation .nav-panel-wrapper .nav-panel-item {
         position: relative;
         display: inline-block;
@@ -56,8 +80,14 @@ h4 {
         text-align: center;
         margin: 0 50px;
         transition: all 0.3s; }
+        @media screen and (max-width: 1300px) {
+          #intro .intro-navigation .nav-panel-wrapper .nav-panel-item {
+            font-size: 1.3rem; } }
+        @media screen and (max-width: 1199px) {
+          #intro .intro-navigation .nav-panel-wrapper .nav-panel-item {
+            margin: 0 20px; } }
       #intro .intro-navigation .nav-panel-wrapper .nav-panel-item:hover {
-        color: #d41d05;
+        color: #053896;
         text-decoration: none; }
       #intro .intro-navigation .nav-panel-wrapper .nav-panel-item::after {
         content: '';
@@ -70,7 +100,7 @@ h4 {
         transition: all 0.5s; }
       #intro .intro-navigation .nav-panel-wrapper .nav-panel-item:hover::after {
         width: 100%;
-        background-color: #d41d05; }
+        background-color: #053896; }
       #intro .intro-navigation .nav-panel-wrapper .nav-panel-btn {
         display: none;
         position: absolute;
@@ -81,6 +111,12 @@ h4 {
         box-sizing: border-box;
         background: transparent;
         border: none; }
+        @media screen and (max-width: 992px) {
+          #intro .intro-navigation .nav-panel-wrapper .nav-panel-btn {
+            display: inline-block; } }
+        @media screen and (max-width: 670px) {
+          #intro .intro-navigation .nav-panel-wrapper .nav-panel-btn {
+            right: 20px; } }
         #intro .intro-navigation .nav-panel-wrapper .nav-panel-btn .nav-btn-bar {
           display: block;
           width: 85%;
@@ -106,6 +142,9 @@ h4 {
     z-index: 500;
     background-color: rgba(0, 0, 0, 0.85);
     transition: all 0.1s; }
+    @media screen and (max-width: 992px) {
+      #intro .backdrop-menu {
+        display: block; } }
     #intro .backdrop-menu .backdrop-menu-items {
       position: absolute;
       top: 16%;
@@ -131,14 +170,44 @@ h4 {
     width: 100%;
     justify-content: center;
     padding: 0 20px; }
+    @media screen and (max-width: 992px) {
+      #intro .intro-information {
+        top: 35%;
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+        flex-direction: column; } }
+    @media screen and (max-width: 670px) {
+      #intro .intro-information {
+        top: 30%; } }
     #intro .intro-information .intro-title {
       width: 50%;
       margin-right: 50px;
       line-height: 2; }
+      @media screen and (max-width: 992px) {
+        #intro .intro-information .intro-title {
+          width: 100%; } }
+      @media screen and (max-width: 992px) {
+        #intro .intro-information .intro-title h1 {
+          font-size: 2rem; } }
+      @media screen and (max-width: 576px) {
+        #intro .intro-information .intro-title h1 {
+          font-size: 1.5rem; } }
       #intro .intro-information .intro-title h2 {
         font-weight: 300; }
+        @media screen and (max-width: 992px) {
+          #intro .intro-information .intro-title h2 {
+            font-size: 1.5rem; } }
+        @media screen and (max-width: 576px) {
+          #intro .intro-information .intro-title h2 {
+            font-size: 1.3rem; } }
     #intro .intro-information .intro-form {
       width: 400px; }
+      @media screen and (max-width: 992px) {
+        #intro .intro-information .intro-form {
+          margin: 10px auto; } }
+      @media screen and (max-width: 576px) {
+        #intro .intro-information .intro-form {
+          width: 90%; } }
       #intro .intro-information .intro-form img {
         width: 100%; }
 
@@ -152,13 +221,28 @@ h4 {
     width: 50%;
     color: #000;
     transition: top 0.7s; }
+    @media screen and (max-width: 992px) {
+      #solar-info .solar-info-article {
+        width: 100%; } }
     #solar-info .solar-info-article h3 {
       font-size: 2rem; }
+      @media screen and (max-width: 670px) {
+        #solar-info .solar-info-article h3 {
+          font-size: 1.8rem; } }
     #solar-info .solar-info-article p {
       font-size: 1.2rem; }
+      @media screen and (max-width: 992px) {
+        #solar-info .solar-info-article p {
+          font-size: 1.3rem; } }
+      @media screen and (max-width: 670px) {
+        #solar-info .solar-info-article p {
+          font-size: 1.2rem; } }
     #solar-info .solar-info-article article {
       line-height: 2;
       text-align: justify; }
+      @media screen and (max-width: 670px) {
+        #solar-info .solar-info-article article {
+          line-height: 1.5; } }
   #solar-info .solar-img {
     width: 50%;
     height: 100%; }
@@ -167,16 +251,30 @@ h4 {
       height: 100%; }
 
 #usage {
-  padding: 100px 0; }
+  min-height: 80vh;
+  position: relative; }
+  #usage .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   #usage .usage-block-img img {
     width: 200px;
-    height: 150px; }
+    height: 150px;
+    display: block;
+    margin: 0 auto; }
+  #usage .usage-block-info {
+    text-align: center; }
 
 #equipment {
-  min-height: 50vh;
+  min-height: 70vh;
   background-color: #f5f6f7;
   padding: 50px 0;
   padding-bottom: 10px; }
+  @media screen and (max-width: 992px) {
+    #equipment {
+      padding: 20px 0; } }
   #equipment h3 {
     margin-bottom: 30px; }
   #equipment .offer {
@@ -188,12 +286,17 @@ h4 {
       text-align: center;
       font-weight: bold; }
     #equipment .offer .offer-body {
-      width: 270px;
+      position: relative;
+      width: 280px;
+      height: 350px;
       margin: 0 auto;
       padding: 10px 40px 0;
       background-color: #fff;
       box-shadow: 0 4px 24px 5px rgba(33, 33, 33, 0.06);
       box-sizing: border-box; }
+      @media screen and (max-width: 992px) {
+        #equipment .offer .offer-body {
+          margin-bottom: 20px; } }
       #equipment .offer .offer-body img {
         display: block;
         width: 100%;
@@ -203,19 +306,34 @@ h4 {
         display: block;
         margin: 15px 0; }
       #equipment .offer .offer-body button {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);
         width: 100px;
         display: block;
-        margin: 40px auto 20px; }
+        margin: 10px auto; }
   #equipment .equipment-submit {
     text-align: center;
     margin: 50px 0 20px;
     font-size: 1.2rem; }
+    @media screen and (max-width: 992px) {
+      #equipment .equipment-submit {
+        margin: 0 0 20px; } }
     #equipment .equipment-submit button {
       margin: 0 20px; }
+      @media screen and (max-width: 992px) {
+        #equipment .equipment-submit button {
+          display: block;
+          margin: 20px auto 0; } }
 
 #installation {
   min-height: 50vh;
   padding: 50px 0 0; }
+  @media screen and (max-width: 992px) {
+    #installation {
+      padding: 20px 0; } }
   #installation h3 {
     margin-bottom: 30px; }
   #installation .stage {
@@ -230,6 +348,9 @@ h4 {
   background-color: #f5f6f7;
   min-height: 50vh;
   padding: 50px 0 0; }
+  @media screen and (max-width: 992px) {
+    #retail {
+      padding: 20px 0 0; } }
   #retail h3 {
     margin-bottom: 40px; }
   #retail .row {
@@ -237,26 +358,36 @@ h4 {
   #retail img {
     width: 150px;
     height: 140px; }
+  @media screen and (max-width: 1199px) {
+    #retail .retail-block .retail-block-main {
+      width: 90%;
+      margin: 0 auto; } }
   #retail .retail-block button {
     margin: 20px auto 30px;
     display: block; }
-  #retail .retail-block .retail-block-info {
+  #retail .retail-block-info {
     border: 1px solid;
     height: 80%;
     padding: 20px 0;
     box-sizing: border-box; }
-    #retail .retail-block .retail-block-info span {
+    #retail .retail-block-info span {
       display: block; }
 
 #advantages {
   min-height: 50vh;
   padding: 50px 0; }
+  @media screen and (max-width: 992px) {
+    #advantages {
+      padding: 20px 0; } }
   #advantages img {
     width: 100%;
     max-width: 400px;
     height: auto; }
   #advantages .row {
     padding: 20px 0 0; }
+  @media screen and (max-width: 992px) {
+    #advantages .advantages-block {
+      margin: 10px 0; } }
   #advantages .advantages-block article {
     margin-left: 20px; }
   #advantages .advantages-block .fas {
@@ -267,6 +398,9 @@ h4 {
   min-height: 50vh;
   background-color: #f5f6f7;
   padding: 50px 0; }
+  @media screen and (max-width: 992px) {
+    #feedback {
+      padding: 20px 0; } }
   #feedback .feedback-block {
     background-color: #fff;
     box-shadow: 0 5px 24px #ccc;
@@ -274,6 +408,9 @@ h4 {
     position: relative;
     margin: 20px 30px;
     z-index: 100; }
+    @media screen and (max-width: 992px) {
+      #feedback .feedback-block {
+        margin-bottom: 50px; } }
     #feedback .feedback-block h4 {
       padding: 0 20px 10px; }
     #feedback .feedback-block article {
@@ -283,13 +420,37 @@ h4 {
       right: 20px;
       bottom: -50px;
       z-index: 500; }
+      @media screen and (max-width: 1199px) {
+        #feedback .feedback-block .feedback-photo {
+          right: 9px;
+          bottom: -35px; } }
+      @media screen and (max-width: 992px) {
+        #feedback .feedback-block .feedback-photo {
+          right: 20px;
+          bottom: -50px; } }
+      @media screen and (max-width: 370px) {
+        #feedback .feedback-block .feedback-photo {
+          right: 9px;
+          bottom: -35px; } }
       #feedback .feedback-block .feedback-photo img {
         width: 100px;
         border-radius: 50%; }
+        @media screen and (max-width: 1199px) {
+          #feedback .feedback-block .feedback-photo img {
+            width: 70px; } }
+        @media screen and (max-width: 992px) {
+          #feedback .feedback-block .feedback-photo img {
+            width: 100px; } }
+        @media screen and (max-width: 370px) {
+          #feedback .feedback-block .feedback-photo img {
+            width: 70px; } }
 
 #articles {
   background-color: #f5f6f7;
   padding: 50px 0; }
+  @media screen and (max-width: 992px) {
+    #articles {
+      padding: 20px 0; } }
   #articles h3 {
     margin-bottom: 30px; }
   #articles article {
@@ -301,6 +462,9 @@ h4 {
     background-color: #fff;
     box-shadow: 0 4px 24px 5px rgba(33, 33, 33, 0.06);
     border-radius: 8px; }
+    @media screen and (max-width: 992px) {
+      #articles article {
+        margin-bottom: 20px; } }
     #articles article img {
       width: 100%;
       height: 250px;
@@ -321,6 +485,12 @@ footer {
   background-color: #0090d2;
   color: #fff;
   font-size: 1.1rem; }
+  @media screen and (max-width: 992px) {
+    footer {
+      padding: 20px 0; } }
+  @media screen and (max-width: 768px) {
+    footer {
+      padding: 20px 20px !important; } }
   footer ul.list-unstyled a {
     color: #fff; }
   footer .phone,

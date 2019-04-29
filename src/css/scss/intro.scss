@@ -1,0 +1,271 @@
+#intro {
+    font-family: $intro-font;
+    color: #fff;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -5;
+    }
+
+    .backdrop-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: #000;
+        opacity: 0.3;
+    }
+
+    .intro-navigation {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 50px;
+        z-index: 900;
+
+        @include large-screen {
+            top: 0;
+            padding-top: 20px;
+        }
+
+        @include rwd-screen(670) {
+            margin: 0;
+        }
+
+        @include small-screen {
+            padding: 20px 0;
+        }
+
+        .intro-logo {
+            transform: translate(0, -15px);
+
+            @include large-screen {
+                transform: translate(0, 0);
+            }
+
+            @include small-screen {
+                transform: scale(0.8);
+            }
+        }
+
+        .nav-panel-wrapper {
+            margin-left: 200px;
+            width: 90%;
+            position: relative;
+
+            @include rwd-screen(1450) {
+                margin-left: 60px;
+            }
+
+            .nav-panel {
+                @include large-screen {
+                    display: none;
+                }
+            }
+
+            .nav-panel-item {
+                position: relative;
+                display: inline-block;
+                color: #fff;
+                font-weight: 300;
+                font-size: 1.5rem;
+                text-align: center;
+                margin: 0 50px;
+                transition: all 0.3s;
+
+                @include rwd-screen(1300) {
+                    font-size: 1.3rem;
+                }
+
+                @include xlarge-screen {
+                    margin: 0 20px;
+                }
+            }
+
+            .nav-panel-item:hover {
+                color: #053896;
+                text-decoration: none;
+            }
+            
+            .nav-panel-item::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background-color: #fff;
+                transition: all 0.5s;
+            }
+            
+            .nav-panel-item:hover::after {
+                width: 100%;
+                background-color: #053896;
+            }
+
+            .nav-panel-btn {
+                display: none;
+                position: absolute;
+                right: 100px;
+                width: 50px;
+                height: 50px;
+                padding: 5px 0;
+                box-sizing: border-box;
+                background: transparent;
+                border: none;
+
+                @include large-screen {
+                    display: inline-block;
+                }
+
+                @include rwd-screen(670) {
+                    right: 20px;
+                }
+
+                .nav-btn-bar {
+                    display: block;
+                    width: 85%;
+                    height: 5px;
+                    margin: 6px auto;
+                    background-color: #fff;
+                    transition: all 0.1s;
+                }
+            }
+
+            .nav-panel-btn.opened .btn-bar-first {
+                transform: translate(0, 5px) rotate(45deg);
+            }
+            
+            .nav-panel-btn.opened .btn-bar-second {
+                display: none;
+            }
+            
+            .nav-panel-btn.opened .btn-bar-third {
+                transform: translate(0, -5px) rotate(-45deg);
+            }
+        }
+    }
+
+    .backdrop-menu {
+        position: absolute;
+        display: none;
+        top: -100vh;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 500;
+        background-color: rgba(0, 0, 0, 0.85);
+        transition: all 0.1s;
+
+        @include large-screen {
+            display: block;
+        }
+
+        .backdrop-menu-items {
+            position: absolute;
+            top: 16%;
+            list-style: none;
+            font-size: 1.5rem;
+
+            .backdrop-menu-item {
+                color: #fff;
+                display: block;
+                padding: 15px 0;
+            }
+            
+            .backdrop-menu-item:hover,
+            .backdrop-menu-item:active {
+                color: #fff;
+                text-decoration: none;
+            }
+            
+        }
+    }
+    
+    .backdrop-menu.opened {
+        top: 0;
+    }
+
+    .intro-information {
+        position: absolute;
+        top: 60%;
+        transform: translate(0, -60%);
+        z-index: 100;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0 20px;
+
+        @include large-screen {
+            top: 35%;
+            transform: translate(0, 0);
+            flex-direction: column;
+        }
+
+        @include rwd-screen(670) {
+            top: 30%;
+        }
+
+        .intro-title {
+            width: 50%;
+            margin-right: 50px;
+            line-height: 2;
+
+            @include large-screen {
+                width: 100%;
+            }
+
+            h1 {
+                @include large-screen {
+                    font-size: 2rem;
+                }
+
+                @include small-screen {
+                    font-size: 1.5rem;
+                }
+            }
+
+            h2 {
+                font-weight: 300;
+
+                @include large-screen {
+                    font-size: 1.5rem;
+                }
+
+                @include small-screen {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .intro-form {
+            width: 400px;
+
+            @include large-screen {
+                margin: 10px auto;
+            }
+
+            @include small-screen {
+                width: 90%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+        
+    }
+}
