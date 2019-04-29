@@ -10,17 +10,20 @@
     .feedback-block {
         background-color: #fff;
         box-shadow: 0 5px 24px #ccc;
-        border-radius: 8px;
+        border-radius: 4px;
         position: relative;
         margin: 20px 30px;
         z-index: 100;
 
-        @include large-screen {
-            margin-bottom: 50px;
+        @include xlarge-screen {
+            margin: 20px auto 50px;
+            width: 70%;
         }
 
         h4 {
             padding: 0 20px 10px;
+            position: absolute;
+            bottom: 0px;
         }
 
         article {
@@ -33,9 +36,9 @@
             bottom: -50px;
             z-index: 500;
 
-            @include xlarge-screen {
+            @include rwd-screen(1300) {
                 right: 9px;
-                bottom: -35px;
+                bottom: -40px;
             }
 
             @include large-screen {
@@ -52,8 +55,8 @@
                 width: 100px;
                 border-radius: 50%;
 
-                @include xlarge-screen {
-                    width: 70px;
+                @include rwd-screen(1300) {
+                    width: 80px;
                 }
 
                 @include large-screen {
