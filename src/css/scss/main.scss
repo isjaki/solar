@@ -40,6 +40,13 @@ $breakpoints: (
     }
 }
 
+@mixin align-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 body {
     font-size: $font-size;
     font-family: $main-font;
@@ -66,6 +73,8 @@ h4 {
 @import 'advantages';
 
 @import 'feedback';
+
+@import 'gallery';
 
 @import 'articles';
 

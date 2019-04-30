@@ -1,0 +1,68 @@
+#gallery {
+
+    position: relative;
+    height: 100vh;
+
+    .gallery-block {
+
+        @include align-center;
+
+        display: flex;
+        width: 900px;
+        height: 750px;
+        border-radius: 5px;
+        box-shadow: 0 4px 24px 5px rgba($color: #666, $alpha: 0.4);
+
+        .gallery-aside-menu {
+            
+            background-color: $bg-color-main;
+            width: 30%;
+            border-radius: 5px 0 0 5px;
+            padding: 15px;
+
+            ul {
+                padding-left: 20px;
+
+                li {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        .gallery-main {
+            
+            position: relative;
+            width: 70%;
+            border-radius: 0 5px 5px 0;
+
+            .gallery-main-left {
+
+            }
+
+            .gallery-main-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                background-image: url('../../assets/img/solar-sky.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 0 5px 5px 0;
+            }
+
+            .gallery-main-bottom {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba($color: #000000, $alpha: 0.6);
+                color: #fff;
+                padding: 10px;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+}
