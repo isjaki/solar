@@ -524,10 +524,19 @@
                         <li>Автомобильный прицеп</li>
                         <li>Яхта</li>
                     </ul>
-                    <button type="button">Посмотреть все</button>
+                    <button type="button" class="btn btn-primary">Посмотреть все</button>
                 </div>
                 <div class="gallery-main">
-                    <div class="gallery-main-left"></div>
+                    <div class="gallery-main-left">
+                        <div>
+                            <img src="./assets/img/solar-panel.png" />
+                            <p>Время автономной работы</p>
+                        </div>
+                        <div>
+                            <img src="./assets/img/solar-panel.png" />
+                            <p>Денег сэкономлено</p>
+                        </div>
+                    </div>
                     <div class="gallery-main-img"></div>
                     <div class="gallery-main-bottom">
                         Praesent porttitor
@@ -579,6 +588,31 @@
             </div>
         </section>
 
+        <section id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 contacts-info">
+                        <h3>Контакты</h3>
+                        <address><p><i class="fas fa-globe-europe"></i>г. Нижний Новгород, Московское шоссе, 31а</p></address>
+                        <p><i class="fas fa-phone"></i><a href="tel:+78312280911">(831) 228-09-11</a></p>
+                        <p><i class="far fa-envelope"></i><a href="mailto:solar@cek.ru">solar@cek.ru</a></p>
+                    </div>
+                    <div class="col-lg-6 contacts-form">
+                        <form action="">
+                            <label>
+                                <input type="text" name="name" placeholder="Имя" />
+                            </label>
+                            <label>
+                                <input type="email" name="email" placeholder="Email" />
+                            </label>
+                            <textarea name="message" placeholder="Сообщение"></textarea>
+                            <input class="btn btn-primary" type="submit" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -610,7 +644,7 @@
                     </div>
                     <div class="col-lg-2 email">
                         <div class="email-icon">
-                            <i class="far fa-clock"></i>
+                            <i class="far fa-envelope"></i>
                         </div>
                         <div><a href="mailto:solar@cek.ru">solar@cek.ru</a></div>
                     </div>
