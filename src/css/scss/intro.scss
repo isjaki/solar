@@ -62,16 +62,17 @@
         }
 
         .nav-panel-wrapper {
-            margin-left: 200px;
+            margin-left: 100px;
             width: 90%;
             position: relative;
+            font-family: 'Roboto', sans-serif;
 
             @include rwd-screen(1450) {
                 margin-left: 60px;
             }
 
             .nav-panel {
-                @include large-screen {
+                @include rwd-screen(1110) {
                     display: none;
                 }
             }
@@ -81,17 +82,22 @@
                 display: inline-block;
                 color: #fff;
                 font-weight: 300;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 text-align: center;
-                margin: 0 50px;
+                margin: 0 30px;
                 transition: all 0.3s;
 
                 @include rwd-screen(1300) {
                     font-size: 1.3rem;
+                    margin: 0 20px;
                 }
 
                 @include xlarge-screen {
-                    margin: 0 20px;
+                    margin: 0 10px;
+                }
+
+                .fa-phone {
+                    margin: 0 10px;
                 }
             }
 
@@ -127,7 +133,7 @@
                 background: transparent;
                 border: none;
 
-                @include large-screen {
+                @include rwd-screen(1110) {
                     display: inline-block;
                 }
 
@@ -170,7 +176,7 @@
         background-color: rgba(0, 0, 0, 0.85);
         transition: all 0.1s;
 
-        @include large-screen {
+        @include rwd-screen(1110) {
             display: block;
         }
 
@@ -210,7 +216,7 @@
         padding: 0 20px;
 
         @include large-screen {
-            top: 35%;
+            top: 25%;
             transform: translate(0, 0);
             flex-direction: column;
         }
@@ -224,11 +230,18 @@
             margin-right: 50px;
             line-height: 2;
 
+            @include rwd-screen(1600) {
+                width: 640px;
+            }
+
             @include large-screen {
                 width: 100%;
             }
 
             h1 {
+
+                margin-bottom: 30px;
+
                 @include large-screen {
                     font-size: 2rem;
                 }
@@ -240,6 +253,7 @@
 
             h2 {
                 font-weight: 300;
+                font-family: 'Roboto', sans-serif;
 
                 @include large-screen {
                     font-size: 1.5rem;

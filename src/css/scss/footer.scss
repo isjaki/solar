@@ -22,7 +22,7 @@ footer {
     .phone,
     .email {
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         position: relative;
 
         a {
@@ -37,7 +37,8 @@ footer {
     }
 
     .fa-phone,
-    .fa-clock {
+    .fa-envelope {
         font-size: 20px;
+        margin-right: 5px;
     }
 }

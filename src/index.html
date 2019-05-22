@@ -34,14 +34,15 @@
 
             <div class="intro-navigation">
                 <div class="intro-logo">
-                    <img src="./assets/img/logo.png" alt="cek logo" />
+                    <img src="./assets/img/logo2.png" alt="cek logo" />
                 </div>
                 <div class="nav-panel-wrapper">
                     <div class="nav-panel">
                         <a class="nav-panel-item" href="#equipment">Оборудование</a>
                         <a class="nav-panel-item" href="#retail">Розница</a>
                         <a class="nav-panel-item" href="#gallery">Наши работы</a>
-                        <a class="nav-panel-item" href="#feedback">Отзывы</a> 
+                        <a class="nav-panel-item" href="#feedback">Отзывы</a>
+                        <a class="nav-panel-item" href="tel:+78314134982"><i class="fas fa-phone"></i>(831) 413-49-82</a>
                     </div>
                     <button class="nav-panel-btn">
                         <span class="nav-btn-bar btn-bar-first"></span>
@@ -66,7 +67,16 @@
                     <h2>Станьте независимыми от сбытовых компаний, перебоев на электростанциях и платы за «топливо»</h2>
                 </section>
                 <section class="intro-form">
-                    <img src="./assets/img/form-image.png" alt="form" />
+                    <script id="bx24_form_inline" data-skip-moving="true">
+                        (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+                               (w[b].forms=w[b].forms||[]).push(arguments[0])};
+                               if(w[b]['forms']) return;
+                               var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());
+                               var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                        })(window,document,'https://bitrix.cek.ru/bitrix/js/crm/form_loader.js','b24form');
+                    
+                        b24form({"id":"33","lang":"ru","sec":"91q8ej","type":"inline"});
+                    </script>
                 </section>    
             </div>
 
@@ -238,62 +248,38 @@
         </section>
 
         <section id="installation">
-            <div class="container">
+            <div class="container-fluid">
                 <h3 class="text-center">Производим монтаж любой сложности!</h3>
-                <div class="row">
-                    <div class="col-md">
-
-                        <div class="stage d-flex">
-                            <img src="./assets/img/solar-panel.png" alt="img" /> 
-                            <div class="stage-info">
-                                <h4>Этап 1</h4>
-                                <article>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada,
-                                    neque vitae scelerisque imperdiet, lacus risus blandit erat, nec semper nulla
-                                    justo ac risus.
-                                </article>
-                            </div>
-                        </div>
-
-                        <div class="stage d-flex">
-                            <img src="./assets/img/solar-panel.png" alt="img" /> 
-                            <div class="stage-info">
-                                <h4>Этап 2</h4>
-                                <article>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada,
-                                    neque vitae scelerisque imperdiet, lacus risus blandit erat, nec semper nulla
-                                    justo ac risus.
-                                </article>
-                            </div>
-                        </div>
-
+                <p class="text-center">Наша цель – сделать процесс подключения солнечной электростанции простым и быстрым</p>
+                <div class="installation-wrapper">
+                    <div class="installation-stage">
+                        <div class="text-center installation-img"><img src="./assets/img/solar-panel.png" alt="some random image" /></div>
+                        <h4 class="text-center">Этап 1</h4>
+                        <p class="text-center">Бесплатная консультация и выезд на замеры</p>
                     </div>
-                    <div class="col-md">
-
-                        <div class="stage d-flex">
-                            <img src="./assets/img/solar-panel.png" alt="img" /> 
-                            <div class="stage-info">
-                                <h4>Этап 3</h4>
-                                <article>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada,
-                                    neque vitae scelerisque imperdiet, lacus risus blandit erat, nec semper nulla
-                                    justo ac risus.
-                                </article>
-                            </div>
-                        </div>
-
-                        <div class="stage d-flex">
-                            <img src="./assets/img/solar-panel.png" alt="img" /> 
-                            <div class="stage-info">
-                                <h4>Этап 4</h4>
-                                <article>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada,
-                                    neque vitae scelerisque imperdiet, lacus risus blandit erat, nec semper nulla
-                                    justo ac risus.
-                                </article>
-                            </div>
-                        </div>
-
+                    <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                    <div class="installation-stage">
+                        <div class="text-center installation-img"><img src="./assets/img/solar-panel.png" alt="some random image" /></div>
+                        <h4 class="text-center">Этап 2</h4>
+                        <p class="text-center">Разработка и проектирование системы, расчет ее стоимости</p>
+                    </div>
+                    <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                    <div class="installation-stage">
+                        <div class="text-center installation-img"><img src="./assets/img/solar-panel.png" alt="some random image" /></div>
+                        <h4 class="text-center">Этап 3</h4>
+                        <p class="text-center">Заключение договора</p>
+                    </div>
+                    <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                    <div class="installation-stage">
+                        <div class="text-center installation-img"><img src="./assets/img/solar-panel.png" alt="some random image" /></div>
+                        <h4 class="text-center">Этап 4</h4>
+                        <p class="text-center">Установка солнечных панелей и сопутствующего оборудования</p>
+                    </div>
+                    <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+                    <div class="installation-stage">
+                        <div class="text-center installation-img"><img src="./assets/img/solar-panel.png" alt="some random image" /></div>
+                        <h4 class="text-center">Этап 5</h4>
+                        <p class="text-center">Ввод системы в эксплуатацию</p>
                     </div>
                 </div>
             </div>
@@ -616,8 +602,8 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-3 mb-3">
-                        <img src="./assets/img/logo.png" alt="cek logo">
+                    <div class="col-xl-3 col-lg-3 mb-3">
+                        <img src="./assets/img/logo2.png" alt="cek logo">
                     </div>
                     <div class="col-lg-2">
                         <ul class="list-unstyled">
@@ -636,17 +622,11 @@
                             <li><a href="#articles">Статьи</a></li>
                         </ul>
                     </div>
-                    <div class="col-xl-2 col-lg-3 phone">
-                        <div class="phone-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div><a href="tel:+78312280911">(831) 228-09-11</a></div>
+                    <div class="col-lg-3 text-lg-right phone">
+                        <div><i class="fas fa-phone"></i><a href="tel:+78312280911">(831) 228-09-11</a></div>
                     </div>
                     <div class="col-lg-2 email">
-                        <div class="email-icon">
-                            <i class="far fa-envelope"></i>
-                        </div>
-                        <div><a href="mailto:solar@cek.ru">solar@cek.ru</a></div>
+                        <div><i class="far fa-envelope"></i><a href="mailto:solar@cek.ru">solar@cek.ru</a></div>
                     </div>
                 </div>
             </div>
