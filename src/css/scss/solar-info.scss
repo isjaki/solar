@@ -15,32 +15,16 @@
         }
 
         h3 {
-            font-size: 2rem;
-
-            @include rwd-screen(670) {
-                font-size: 1.8rem;
-            }
+            font-size: 1.6rem;
         }
 
         p {
-            font-size: 1.2rem;
-
-            @include large-screen {
-                font-size: 1.3rem;
-            }
-
-            @include rwd-screen(670) {
-                font-size: 1.2rem;
-            }
+            font-size: 1.1rem;
         }
 
         article {
-            line-height: 2;
+            line-height: 1.5;
             text-align: justify;
-
-            @include rwd-screen(670) {
-                line-height: 1.5;
-            }
         }
     }
 
